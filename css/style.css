@@ -70,3 +70,31 @@
     padding-left: 1rem;
     padding-bottom: .5rem;
 }
+
+/* MODAL */
+#precio-producto, #desc-producto, #titulo-colores, #titulo-talles {
+    display: block;
+}
+
+#color1 {
+    margin-right: .5rem;
+}
+
+#titulo-talles, #titulo-colores {
+    margin-bottom: .5rem;
+}
+
+#titulo-talles {
+    margin-top: .5rem;
+}
+
+.talles .item, .contenedor-colores .item {
+    border: 1px solid black;
+    padding: .4rem;
+}
+
+#foto-producto-añadir {
+    height: 12rem;
+    position: absolute;
+    right: 0;
+}
