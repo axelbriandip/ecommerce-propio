@@ -1,18 +1,18 @@
 let arrayStock = [
-    {id:'1', name:'hoodie roja', price:'24.00', img:'https://img.represent.com/uploads/97cc04c33fb623827703747d01496782.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'2', name:'Sudadera negra', price:'14.00', img:'https://img.represent.com/uploads/ad9b3e6580cf66d28cbd90314ecdd0a6.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'3', name:'camisa blanca', price:'13.00', img:'https://img.represent.com/uploads/a76857819caae151f62fb58e05621acd.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'4', name:'camisa roja', price:'13.00', img:'https://img.represent.com/uploads/e33ba02f02bf3f18ba5e0db1a424ba56.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'5', name:'hoodie blanca', price:'24.00', img:'https://img.represent.com/uploads/535666bf499a0c508ace882bb0420436.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'6', name:'sudadera negra', price:'14.00', img:'https://img.represent.com/uploads/ee4a165cfdce4d17714bf8a39211746b.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'7', name:'hoodie negra', price:'24.00',img:'https://img.represent.com/uploads/46ac9d39acbd33cee2aadd5b6c230dc0.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'8', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'9', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'10', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'11', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'12', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'13', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
-    {id:'14', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null}
+    {id:'001', name:'hoodie roja', price:'24.00', img:'https://img.represent.com/uploads/97cc04c33fb623827703747d01496782.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'002', name:'Sudadera negra', price:'14.00', img:'https://img.represent.com/uploads/ad9b3e6580cf66d28cbd90314ecdd0a6.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'003', name:'camisa blanca', price:'13.00', img:'https://img.represent.com/uploads/a76857819caae151f62fb58e05621acd.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'004', name:'camisa roja', price:'13.00', img:'https://img.represent.com/uploads/e33ba02f02bf3f18ba5e0db1a424ba56.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'005', name:'hoodie blanca', price:'24.00', img:'https://img.represent.com/uploads/535666bf499a0c508ace882bb0420436.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'006', name:'sudadera negra', price:'14.00', img:'https://img.represent.com/uploads/ee4a165cfdce4d17714bf8a39211746b.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'007', name:'hoodie negra', price:'24.00',img:'https://img.represent.com/uploads/46ac9d39acbd33cee2aadd5b6c230dc0.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'008', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'009', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'0010', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'0011', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'0012', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'0013', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null},
+    {id:'0014', name:'sudadera blanca', price:'14.00', img:'https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format', color: null, talle: null}
 ]
 
 const mostrarStock = (array) => {
@@ -20,10 +20,10 @@ const mostrarStock = (array) => {
     for (let i = 0; i < array.length; i++) {
         let html =
         `<div class="producto" onclick="modalPersonalizado(${array[i].id})" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        <div class="foto-producto"><img src="${array[i].img}"></div>
-            <span class="titulo-producto">ID ${array[i].id}</span>
-            <span class="titulo-producto">${array[i].name}</span>
-            <span class="color-producto">$${array[i].price}</span>
+            <div class="foto-producto"><img src="${array[i].img}"></div>
+            <span class="id-producto">ID ${array[i].id}</span>
+            <span class="name-producto">${array[i].name}</span>
+            <span class="price-producto">$${array[i].price}</span>
         </div>`;
         contenedor.innerHTML += html;
     }
@@ -91,10 +91,10 @@ const limpiarCarrito = () => {
 
 const mostrarCarrito = (array) => {
     let html;
+    let totalCarrito = 0;
     const contenedorCarrito = document.querySelector(".contenedor-carrito");
     if(array.length > 0) {
         limpiarCarrito();
-        let totalCarrito = 0;
         for (let i = 0; i < array.length; i++) {
             html =
             `<div class="producto-carrito d-flex">
@@ -120,13 +120,18 @@ const mostrarCarrito = (array) => {
             </div>
             `;
             contenedorCarrito.innerHTML += html;
-            totalCarrito = totalCarrito + array[i].precio;
+            totalCarrito = totalCarrito + Number(array[i].price);
         }
-        let htmlTotalCarrito = `Total: $${totalCarrito}`;
-        contenedorCarrito.innerHTML += htmlTotalCarrito;
+        let html2 =
+        `<h2 class="tituloRC">Resumen del pedido</h2>
+        <div class="d-flex justify-content-between"><span>Subtotal</span><span>$${totalCarrito}</span></div>
+        <div class="d-flex justify-content-between"><span>Envío</span><span>$9</span></div>
+        <div class="d-flex justify-content-between"><span>Total</span><span>$${totalCarrito+9}</span></div>`;
+        let contenedorRC = document.querySelector(".resumen-carrito");
+        contenedorRC.innerHTML = html2;
     }else {
-        alert("AAAAAAA");
-        html = "No existen arrayStock en el carrito"
+        // alert("AAAAAAA");
+        html = "El carrito aún no tiene productos";
         contenedorCarrito.innerHTML += html;
     }
 }

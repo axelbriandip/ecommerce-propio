@@ -15,11 +15,11 @@
     </div>
     <div class="header-productos">
         <h3>Todos nuestros productos</h3>
-        <select>
-            <option value="">Todos</option>
-            <option value="">Buzos</option>
-            <option value="">Remeras</option>
-            <option value="">Pantalones</option>
+        <select class="select">
+            <option value="todos">Todos</option>
+            <option value="hoodie">Hoodie</option>
+            <option value="sudadera">Sudadera</option>
+            <option value="camisa">Camisa</option>
         </select>
     </div>
     <div class="contenedor-productos">
@@ -68,28 +68,30 @@
                 <h5 class="modal-title" id="staticBackdropLabel">Carrito de compras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body contenedor-carrito">
-                <!-- <div class="producto-carrito d-flex">
-                    <div id="contenedor-foto-carrito">
-                        <img src="https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format" id="foto-producto-carrito">
-                    </div>
-                    <div id="detalle-producto-carrito">
-                        <h2>nombre del producto</h2>
-                        <span>$14.00</span><br>
-                        <span id="color-elegido">Color: rojo</span>
-                        <span>Talle: S</span>
-                    </div>
-                    <div id="botones-carrito" class="d-flex">
-                        <div id="agregar-restar">
-                            <button id="op">+</button>
-                            <span>1</span>
-                            <button id="op">-</button>
+            <div class="modal-body">
+                <div class="contenedor-carrito">
+                    <!-- <div class="producto-carrito d-flex">
+                        <div id="contenedor-foto-carrito">
+                            <img src="https://img.represent.com/uploads/39eecc78c3a4e8bcf0542f9088d0df61.jpeg?w=750&q=95&auto=format" id="foto-producto-carrito">
                         </div>
-                        <div id="contenedor-eliminar">
-                            <button id="boton-eliminar">Eliminar</button>
+                        <div id="detalle-producto-carrito">
+                            <h2>nombre del producto</h2>
+                            <span>$14.00</span><br>
+                            <span id="color-elegido">Color: rojo</span>
+                            <span>Talle: S</span>
                         </div>
-                    </div>
-                </div> fin producto único -->
+                        <div id="botones-carrito" class="d-flex">
+                            <div id="agregar-restar">
+                                <button id="op">+</button>
+                                <span>1</span>
+                                <button id="op">-</button>
+                            </div>
+                            <div id="contenedor-eliminar">
+                                <button id="boton-eliminar">Eliminar</button>
+                            </div>
+                        </div>
+                    </div> fin producto único -->
+                </div>
                 <div class="resumen-carrito">
                     <h2>Resumen del pedido</h2>
                     <div class="d-flex justify-content-between"><span>Subtotal</span><span>$290</span></div>
@@ -104,6 +106,8 @@
             </div>
         </div>
     </div>
+
+    <div class="footer">- Ecommerce hecho en Academlo -</div>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
