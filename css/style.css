@@ -145,6 +145,7 @@
 .carrito h2 {
     margin-bottom: 0;
     margin-top: .5rem;
+    font-weight: bold;
 }
 
 .carrito #color-elegido {
@@ -162,7 +163,6 @@
 #boton-eliminar {
     margin-bottom: .5rem;
     margin-top: 1.5rem;
-    background-color: red;
 }
 
 #botones-carrito button {
@@ -203,4 +203,17 @@
 
 .btn-primary {
     background-color: var(--rojo) !important;
+}
+
+.btn-primary:hover {
+    background-color: #cb4a5a !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: var(--rojo);
 }

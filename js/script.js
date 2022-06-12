@@ -90,8 +90,9 @@ const limpiarCarrito = () => {
 }
 
 const mostrarCarrito = (array) => {
-    let html, html2;
+    let html, html2, html3;
     let totalCarrito = 0;
+    let contenedorModalFooter = document.getElementById("modal-footer");
     let contenedorRC = document.querySelector(".resumen-carrito");
     const contenedorCarrito = document.querySelector(".contenedor-carrito");
     if(array.length > 0) {
@@ -104,7 +105,7 @@ const mostrarCarrito = (array) => {
                 </div>
                 <div id="detalle-producto-carrito">
                     <h2>${array[i].name}</h2>
-                    <span>${array[i].price}</span><br>
+                    <span>$${array[i].price}</span><br>
                     <span id="color-elegido">Color: ${array[i].color}</span>
                     <span>Talle: ${array[i].talle}</span>
                 </div>
@@ -129,9 +130,14 @@ const mostrarCarrito = (array) => {
         <div class="d-flex justify-content-between"><span>Envío</span><span>$9</span></div>
         <div class="d-flex justify-content-between"><span>Total</span><span>$${totalCarrito+9}</span></div>`;
         contenedorRC.innerHTML = html2;
+
+        html3 =
+        `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary btn-finalizar-compra">Finalizar compra</button>`;
+        contenedorModalFooter.innerHTML = html3;
     }else {
-        html = "El carrito aún no tiene productos..<br><br>";
-        contenedorCarrito.innerHTML += html;
+        html = "<span class='material-symbols-outlined'>close</span> El carrito aún no tiene productos..<br><br>";
+        contenedorCarrito.innerHTML = html;
 
         html2 =
         `<h2 class="tituloRC">Resumen del pedido</h2>
@@ -139,5 +145,9 @@ const mostrarCarrito = (array) => {
         <div class="d-flex justify-content-between"><span>Envío</span><span>$0</span></div>
         <div class="d-flex justify-content-between"><span>Total</span><span>$0</span></div>`;
         contenedorRC.innerHTML = html2;
+
+        html3 =
+        `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>`;
+        contenedorModalFooter.innerHTML = html3;
     }
 }
