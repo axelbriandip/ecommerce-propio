@@ -23,13 +23,17 @@
     height: 3rem;
 }
 
+.nav .icono-carrito img {
+    height: 1.7rem;
+}
+
 .nav .icono-carrito {
     display: flex;
     align-items: center;
 }
 
 .nav .logo, .nav .icono-carrito {
-    padding: .5rem 2rem;
+    padding: .5rem 3rem;
 }
 
 /* HEADER PRODUCTOS */
@@ -191,4 +195,12 @@
 
 .tituloRC {
     font-weight: bold;
+}
+
+.btn {
+    border: none !important;
+}
+
+.btn-primary {
+    background-color: var(--rojo) !important;
 }
