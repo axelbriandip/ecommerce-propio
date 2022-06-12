@@ -63,7 +63,7 @@ const modalPersonalizado = (id) => {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito(${arrayStock[i].id})">Añadir al carrito</button>
                 </div>
                 </div>
             </div>`;
@@ -84,32 +84,48 @@ const agregarCarrito = (id) => {
 }
 
 const limpiarCarrito = () => {
-    const contenedorCarrito = document.getElementById("contenedor-carrito");
+    const contenedorCarrito = document.querySelector(".contenedor-carrito");
     let html = "";
     contenedorCarrito.innerHTML = html;
 }
 
 const mostrarCarrito = (array) => {
     let html;
-    const contenedorCarrito = document.getElementById("contenedor-carrito");
+    const contenedorCarrito = document.querySelector(".contenedor-carrito");
     if(array.length > 0) {
         limpiarCarrito();
         let totalCarrito = 0;
         for (let i = 0; i < array.length; i++) {
             html =
-            `<div class="prenda">
-                <span>ID: ${array[i].id}</span>
-                <h3>${array[i].titulo}</h3>
-                <span>Color: ${array[i].color}</span>
-                <span>Talle: ${array[i].talle}</span>
-                <span>Precio: $${array[i].precio}</span>
-            </div>`;
+            `<div class="producto-carrito d-flex">
+                <div id="contenedor-foto-carrito">
+                    <img src="${array[i].img}" id="foto-producto-carrito">
+                </div>
+                <div id="detalle-producto-carrito">
+                    <h2>${array[i].name}</h2>
+                    <span>${array[i].price}</span><br>
+                    <span id="color-elegido">Color: ${array[i].color}</span>
+                    <span>Talle: ${array[i].talle}</span>
+                </div>
+                <div id="botones-carrito" class="d-flex">
+                    <div id="agregar-restar">
+                        <button id="op">+</button>
+                        <span>1</span>
+                        <button id="op">-</button>
+                    </div>
+                    <div id="contenedor-eliminar">
+                        <button id="boton-eliminar">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            `;
             contenedorCarrito.innerHTML += html;
             totalCarrito = totalCarrito + array[i].precio;
         }
         let htmlTotalCarrito = `Total: $${totalCarrito}`;
         contenedorCarrito.innerHTML += htmlTotalCarrito;
     }else {
+        alert("AAAAAAA");
         html = "No existen arrayStock en el carrito"
         contenedorCarrito.innerHTML += html;
     }
