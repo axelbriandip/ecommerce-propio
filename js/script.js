@@ -63,7 +63,7 @@ const modalPersonalizado = (id) => {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="agregarCarrito(${arrayStock[i].id})">Añadir al carrito</button>
+                    <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-dismiss="modal" onclick="agregarCarrito(${arrayStock[i].id})">Añadir al carrito</button>
                 </div>
                 </div>
             </div>`;
@@ -72,9 +72,15 @@ const modalPersonalizado = (id) => {
     }
 }
 
+// let botonAgregarCarrito = document.querySelector(".btn-agregar-carrito");
+// botonAgregarCarrito.addEventListener("click", function(){
+//     swal("Hello world!");
+// })
+
 let carrito = [];
 
 const agregarCarrito = (id) => {
+    swal("¡Bien hecho!", "El producto se añadió al carrito exitosamente", "success");
     for (let i = 0; i < arrayStock.length; i++) {
         if(id == arrayStock[i].id) {
             carrito.push(arrayStock[i]);
@@ -133,7 +139,7 @@ const mostrarCarrito = (array) => {
 
         html3 =
         `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary btn-finalizar-compra" data-bs-dismiss="modal">Finalizar compra</button>`;
+        <button type="button" class="btn btn-primary btn-finalizar-compra" data-bs-dismiss="modal" onclick="modalMensaje()">Finalizar compra</button>`;
         contenedorModalFooter.innerHTML = html3;
     }else {
         html = "<span class='material-symbols-outlined'>close</span> El carrito aún no tiene productos..<br><br>";
@@ -150,4 +156,8 @@ const mostrarCarrito = (array) => {
         `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>`;
         contenedorModalFooter.innerHTML = html3;
     }
+}
+
+const modalMensaje = () => {
+    swal("¡Bien hecho!", "La compra se ha realizado exitosamente", "success");
 }
